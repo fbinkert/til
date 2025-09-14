@@ -8,19 +8,13 @@ const posts = (await getCollection('posts'))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
-<BaseLayout title="Terminal">
+<BaseLayout title="TIL: Today I Learned">
   <div class="index-content framed">
-    <h1 id="hello-there">Hello there!</h1>
-    <p>Welcome to the Astro Terminal theme! This is a port of the popular Hugo Terminal theme by panr, bringing the same retro terminal aesthetic to Astro.</p>
-    <p>
-      You can customise the colour scheme using panr's <a href="https://panr.github.io/terminal-css/"><strong>Terminal.css</strong></a> 
-      generator - all generated schemes are fully compatible with this theme.
-    </p>
-    <p>
-      <a href="https://panr.github.io/terminal-css/">
-        <img src="https://panr.github.io/hugo-theme-terminal-demo/img/terminal-css.png" alt="Terminal.css Preview" />
-      </a>
-    </p>
+    <h1 id="About">About this TIL</h1>
+    <p>I learn a lot and forget faster, so I keep this TIL: a searchable stash of
+    notes worth keeping. Each entry is one note I can find later. Writing makes
+    it stick and saves future me time. There is no rigid format. I write what’s
+    useful to me. It’s both a memory aid and a progress log.</p>
   </div>
   
   <div class="posts">

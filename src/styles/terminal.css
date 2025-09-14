@@ -2,13 +2,63 @@
 @import url('https://cdn.staticdelivr.com/gfonts/css2?family=Fira+Code:wght@300..700&display=swap');
 
 :root {
-  --background: #1a170f;
-  --foreground: #eceae5;
-  --accent: #eec35e;
+  /* Gruvbox Dark — soft */
+  --background: #32302f;
+
+  /* Foreground/text */
+  --foreground: #ebdbb2;
+
+  /* Accents */
+  --accent: #83a598;      /* blue */
+  --secondary: #8ec07c;   /* aqua/teal */
+
+  /* UI elements */
+  --selection: #3c3836;   /* bg1 */
+  --code-border: #504945; /* bg2 */
+
+  /* Muted text */
+  --comment: #928374;     /* gray */
   --radius: 0;
   --font-size: 1rem;
   --line-height: 1.54em;
 }
+
+:root { color-scheme: dark; }
+
+/* Use the selection color */
+::selection {
+  background: var(--selection);
+  color: var(--foreground);
+}
+
+/* Use the code-border color */
+code, pre {
+  border-color: var(--code-border);
+}
+
+/* Show a muted/comment color */
+.muted, small, .note {
+  color: var(--comment);
+}
+
+/* Use secondary as a hover/active accent */
+a:hover {
+  color: var(--secondary);
+}
+
+button.secondary {
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+button.secondary:hover {
+  background: color-mix(in srgb, var(--secondary) 15%, transparent);
+}
+
+/* Use selection for subtle row/backgrounds */
+table tr:nth-child(even) {
+  background: color-mix(in srgb, var(--selection) 60%, transparent);
+}
+
 
 html {
   box-sizing: border-box;
