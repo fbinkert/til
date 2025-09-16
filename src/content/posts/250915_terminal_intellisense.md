@@ -11,7 +11,8 @@ It enables you to receive suggestions for files, folders, commands, command argu
 
 Toggle these two flags in your `settings.json` to turn it on:
 ```
-"terminal.integrated.shellIntegration.enable": true, "terminal.integrated.suggest.enabled": true,
+"terminal.integrated.shellIntegration.enabled": true, 
+"terminal.integrated.suggest.enabled": true,
 ```
 
 I don’t know yet if this is useful or if I’ll turn it off soon.
